@@ -1,0 +1,1 @@
+# snapceipt-legal
