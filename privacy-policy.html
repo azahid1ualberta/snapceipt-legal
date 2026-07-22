@@ -16,16 +16,16 @@
 <body>
 <main>
   <h1>Privacy Policy</h1>
-  <p class="updated">Snapceipt: Receipt Scanner · Last updated: July 10, 2026</p>
+  <p class="updated">Snapceipt: Receipt Scanner · Last updated: July 22, 2026</p>
 
   <p>Snapceipt ("we", "our", or "the app") helps you scan receipts and track your spending. This policy explains what data we collect, how we use it, and your choices.</p>
 
-  <h2>Information we collect</h2>
+  <h2>Information we collect, and how</h2>
   <ul>
-    <li><strong>Account information.</strong> Your email address, and — if you sign in with Apple or Google — the name and email those services share with us.</li>
-    <li><strong>Receipt data.</strong> Photos of receipts you scan and the information extracted from them (store names, items, prices, dates).</li>
-    <li><strong>Usage data.</strong> Your monthly scan count (used to enforce free-tier limits) and in-app points.</li>
-    <li><strong>Subscription status.</strong> Whether you have an active Snapceipt Pro subscription. Payments are processed entirely by Apple; we never see your payment details.</li>
+    <li><strong>Account information.</strong> Your email address, collected when you create an account — and, if you sign in with Apple or Google, the name and email those services share with us.</li>
+    <li><strong>Receipt data.</strong> Photos of receipts, collected only when you choose to take a photo or upload one from your library in the app, and the information extracted from them (store names, items, prices, dates).</li>
+    <li><strong>Usage data.</strong> Your monthly scan count (used to enforce free-tier limits) and in-app points, recorded automatically as you use the app.</li>
+    <li><strong>Subscription status.</strong> Whether you have an active Snapceipt Pro subscription, provided to us by Apple/RevenueCat when you subscribe. Payments are processed entirely by Apple; we never see your payment details.</li>
   </ul>
 
   <h2>How we use your information</h2>
@@ -36,11 +36,21 @@
   </ul>
   <p>We do <strong>not</strong> sell your data, show ads, or use your data for advertising.</p>
 
+  <h2>AI receipt processing (Anthropic)</h2>
+  <p>Snapceipt uses a third-party AI service to read your receipts. Here is exactly what happens:</p>
+  <ul>
+    <li><strong>What is sent.</strong> The photo of the receipt you scan — nothing else. Your name, email, and account details are never sent with the photo.</li>
+    <li><strong>Who it is sent to.</strong> Anthropic, the AI company behind the Claude model, which extracts the store name, items, prices, and totals from the image.</li>
+    <li><strong>Your permission.</strong> The app asks for your explicit consent before your first scan. If you decline, no photo is ever sent, and you can simply not use the scanning feature.</li>
+    <li><strong>How it is protected.</strong> Photos are transmitted over encrypted connections (HTTPS) and processed under Anthropic's commercial API terms, which prohibit using your images to train AI models and provide the same or equal protection for your data as described in this policy.</li>
+    <li><strong>Why.</strong> Solely to provide the app's receipt-reading feature. The images are not used for advertising, profiling, or any other purpose.</li>
+  </ul>
+
   <h2>Service providers</h2>
-  <p>We use a small number of providers to operate the app, each receiving only what is needed for their function:</p>
+  <p>We use a small number of providers to operate the app, each receiving only what is needed for their function. Each provider protects your data to the same or equal standard described in this policy:</p>
   <ul>
     <li><strong>Supabase</strong> — authentication, database, and image storage.</li>
-    <li><strong>Anthropic</strong> — receipt images are processed by the Claude AI model to extract their contents. Images are processed to provide the service and are not used to train AI models.</li>
+    <li><strong>Anthropic</strong> — AI receipt reading, as described in the section above.</li>
     <li><strong>RevenueCat</strong> — subscription management.</li>
     <li><strong>Apple</strong> — payment processing for subscriptions.</li>
     <li><strong>Resend</strong> — delivery of account emails.</li>
